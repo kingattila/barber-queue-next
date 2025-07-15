@@ -1,31 +1,35 @@
 {
   "name": "bbqapp",
   "version": "1.0.0",
-  "main": "customer.js",
-  "description": "",
+  "main": "index.js",
+  "description": "Barber Queue App built with Next.js",
   "scripts": {
     "send-sms": "node send-sms.js",
-    "dev": "vercel dev",
-    "build": "vercel build",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "deploy": "vercel deploy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kingattila/barber-queue-app.git"
+    "url": "git+https://github.com/kingattila/barber-queue-next.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Attila Keresztesi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kingattila/barber-queue-app/issues"
+    "url": "https://github.com/kingattila/barber-queue-next/issues"
   },
-  "homepage": "https://github.com/kingattila/barber-queue-app#readme",
+  "homepage": "https://github.com/kingattila/barber-queue-next#readme",
   "dependencies": {
     "@supabase/supabase-js": "^2.50.5",
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
+    "next": "14.2.3",
     "node-fetch": "^3.3.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "twilio": "^5.7.3"
   }
 }
