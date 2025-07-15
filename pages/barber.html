@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Barber Dashboard - Fade Lab</title>
+  <link rel="stylesheet" href="styles.css?v=4" />
+</head>
+<body>
+  <div class="container">
+    <h1>💈 Barber Dashboard</h1>
+
+    <label for="barberSelect">Select Your Name:</label>
+    <select id="barberSelect">
+      <option disabled selected>Loading barbers...</option>
+    </select>
+
+    <div id="totalCount" class="helper-text" style="margin-top: 10px;">
+      Total in queue: Loading...
+    </div>
+
+    <div id="queueContainer">
+      <h2>Next Customer:</h2>
+      <div id="nextCustomer">No one in the queue</div>
+      <p class="helper-text">Use the buttons below when ready.</p>
+
+      <button id="nextBtn" disabled>✅ Serve</button>
+      <button id="skipBtn" disabled>⏭️ Skip</button>
+      <button id="removeBtn" disabled>❌ Remove</button>
+    </div>
+
+    <a href="/manage" id="manageLink">🔧 Manage Barbers</a><br>
+    <a href="/queue" id="queueLink">📋 Manage Queue</a>
+  </div>
+
+  <script type="module" src="script.js?v=4"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manage Barbers - Fade Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>👤 Manage Barbers</h1>
+
+    <form id="addBarberForm">
+      <input type="text" id="barberName" placeholder="Enter new barber name" required />
+      <button type="submit">Add Barber</button>
+    </form>
+
+    <div id="notifySettings" style="margin-top: 20px;">
+      <h3>⏰ Notification Settings</h3>
+      <label>
+        Notify customers when estimated wait time is under:
+        <input type="number" id="notifyThresholdInput" min="1" value="10" style="width: 60px;" />
+        minutes
+      </label>
+      <button id="updateNotifyBtn">Update</button>
+    </div>
+
+    <div style="margin-top: 20px;">
+      <button id="clear-queue-btn" style="background-color: red; color: white;">❌ Clear Entire Queue</button>
+    </div>
+
+    <div id="barberList" style="margin-top: 30px;">
+      <!-- Barbers will be loaded here -->
+    </div>
+  </div>
+
+  <script type="module" src="manage.js?v=2"></script>
+</body>
+</html>
